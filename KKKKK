@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Starostlivosť o mačky</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #ff6600;
+        }
+
+        .image-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Starostlivosť o mačky</h1>
+        <p>Všetko, čo potrebujete vedieť o tom, ako sa postarať o svojho mačacieho miláčika.</p>
+    </header>
+
+    <nav>
+        <a href="#co-maj-me-vediet">Čo potrebujete vedieť</a>
+        <a href="#strava">Strava</a>
+        <a href="#hygiena">Hygiena</a>
+        <a href="#zdravie">Zdravie</a>
+    </nav>
+
+    <div class="container" id="co-maj-me-vediet">
+        <h2>Čo potrebujete vedieť o mačkách</h2>
+        <div class="image-section">
+            <img src="https://via.placeholder.com/800x400?text=Ma%C4%8Dka+v+pr%C3%ADrode" alt="Mačka v prírode">
+        </div>
+        <p>Mačky sú nezávislé, ale zároveň veľmi citlivé na prostredie, v ktorom žijú. Je dôležité zabezpečiť im dostatok priestoru na odpočinok, ale aj stimuláciu pre ich zvedavosť. Tu sú niektoré dôležité tipy na starostlivosť o mačky:</p>
+        <ul>
+            <li>Dostatok vody a kvalitná strava je základ.</li>
+            <li>Udržujte prostredie čisté, najmä toaletu mačky.</li>
+            <li>Poskytujte mačke dostatok škrabacích miest a zábavy.</li>
+        </ul>
+    </div>
+
+    <div class="container" id="strava">
+        <h2>Strava</h2>
+        <p>Mačky sú obligátni mäsožravci, čo znamená, že ich strava by mala obsahovať kvalitné mäso. Tu sú niektoré kľúčové informácie o strave pre mačky:</p>
+        <ul>
+            <li>Strava by mala byť vyvážená a obsahovať bielkoviny, tuky, a vitamíny.</li>
+            <li>Je dôležité kŕmiť mačky kvalitnými granulkami, konzervami alebo surovým mäsom, ak sú vhodne pripravené.</li>
+            <li>Vždy zabezpečte, aby mala mačka prístup k čistej vode.</li>
+        </ul>
+    </div>
+
+    <div class="container" id="hygiena">
+        <h2>Hygiena</h2>
+        <p>Udržiavanie správnej hygieny je veľmi dôležité pre zdravie mačky:</p>
+        <ul>
+            <li>Pravidelne čistiť mačaciu toaletu, aby sa zabránilo šíreniu zápachu.</li>
+            <li>Pravidelne kefujte mačku, aby ste odstránili prebytočnú srsť.</li>
+            <li>Kontrolujte uši a zuby mačky a ak je to potrebné, zabezpečte odbornú starostlivosť.</li>
+        </ul>
+    </div>
+
+    <div class="container" id="zdravie">
+        <h2>Zdravie mačky</h2>
+        <p>Rovnakú pozornosť, akú venujete výžive a hygiene, by ste mali venovať aj zdravie svojej mačky:</p>
+        <ul>
+            <li>Pravidelný veterinárny prehliadky sú nevyhnutné pre prevenciu chorôb.</li>
+            <li>Rovnakú pozornosť venujte očkovaniu a odčerveniu mačky.</li>
+            <li>Ak mačka vykazuje neobvyklé správanie alebo symptómy, navštívte veterinára.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Starostlivosť o mačky. Všetky práva vyhradené.</p>
+    </footer>
+</body>
+</html>
