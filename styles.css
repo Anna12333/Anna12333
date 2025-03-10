@@ -1,40 +1,77 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset základního stylu pro všechny elementy */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #4CAF50;
-    padding: 10px 0;
-}
-
-header nav ul {
-    list-style-type: none;
+    background-color: #ffcc00;
+    padding: 20px 0;
     text-align: center;
 }
 
-header nav ul li {
+header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
     display: inline;
-    margin: 0 20px;
+    margin-right: 20px;
 }
 
-header nav ul li a {
-    color: white;
+nav ul li a {
     text-decoration: none;
-    font-size: 18px;
+    color: #333;
+    font-weight: bold;
 }
 
-main {
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+section {
+    max-width: 1200px;
+    margin: 40px auto;
     padding: 20px;
-    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+section ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
 }
 
 footer {
-    background-color: #f1f1f1;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 10px;
+    background-color: #ffcc00;
+    color: #fff;
+    margin-top: 40px;
 }
