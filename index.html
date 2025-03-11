@@ -1,74 +1,166 @@
-<!DOCTYPE html>
+/<!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Všechno o Kočkách</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Vše o Kočkách</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fef1f6; /* světle růžová */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff80ab; /* růžová */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        /* Styling pro taby */
+        .tabs {
+            display: flex;
+            background-color: #ff80ab; /* růžová */
+            justify-content: center;
+        }
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            color: white;
+            font-size: 18px;
+            border: 1px solid #ff4c8d;
+            border-radius: 5px 5px 0 0;
+            transition: background-color 0.3s;
+        }
+        .tab:hover {
+            background-color: #ff4c8d;
+        }
+        .tab-content {
+            padding: 20px;
+            display: none;
+        }
+        .active-tab {
+            display: block;
+        }
+        .tab.active {
+            background-color: #ff4c8d;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ff80ab;
+            color: white;
+            margin-top: 40px;
+        }
+        p {
+            line-height: 1.6;
+            color: #333;
+        }
+        .care-link, .feeding-link {
+            background-color: #ff4c8d;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .care-link:hover, .feeding-link:hover {
+            background-color: #ff1f5c;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Všechno o Kočkách</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Délka života</a></li>
-                    <li><a href="about.html">Chování</a></li>
-                    <li><a href="krmeni.html">Zdraví koček</a></li>
-                    
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <main>
-        <!-- Sekce s obrázkem na úvodní stránce -->
-        <section id="intro" class="intro-section">
-            <div class="container">
-                <h2>Vítejte ve světě koček!</h2>
-                <p>Kočky jsou fascinující a nezávislé bytosti, které přinášejí radost do našich domovů. V této sekci se dozvíte více o tom, jak dlouho kočky žijí, jaké mají chování a jak o ně pečovat.</p>
-                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.zoohit.cz%2Fmagazin%2Fkocky%2Fpece-o-zdravi-kocky%2Fvek-kocky&psig=AOvVaw0EMhzmep2h7LDE7pNqIFe6&ust=1741766742268000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLCHxfHIgYwDFQAAAAAdAAAAABAx" alt="Kočka" class="intro-image">
-            </div>
-        </section>
+<header>
+    <h1>Vše o Kočkách</h1>
+</header>
 
-        <!-- Sekce o délce života kočky -->
-        <section id="life-span">
-            <div class="container">
-                <h2>Délka života kočky</h2>
-                <p>Kočky se mohou dožít velmi dlouhého věku. Průměrná domácí kočka žije kolem 12 až 16 let, ale některé mohou žít až 20 let nebo déle, pokud jsou dobře pečovány a mají zdravý životní styl. Kočky, které žijí venku, mají obvykle kratší život kvůli nebezpečím, která je ohrožují.</p>
-            </div>
-        </section>
+<!-- Tab navigace -->
+<div class="tabs">
+    <div class="tab active" onclick="openTab(event, 'about')">O kočkách</div>
+    <div class="tab" onclick="openTab(event, 'care')">Péče o kočky</div>
+    <div class="tab" onclick="openTab(event, 'feeding')">Krmení koček</div>
+</div>
 
-        <!-- Sekce o chování koček -->
-        <section id="behavior">
-            <div class="container">
-                <h2>Chování koček</h2>
-                <p>Kočky jsou známé svou nezávislostí, ale jsou také velmi společenské, pokud jde o jejich majitele. Kočky mají rády klid a stabilitu ve svém okolí. Mohou být velmi přítulné a vázat se na svého majitele, ale také si rády užívají chvíle samoty. Kočičí chování zahrnuje i jejich zvyky při hraní, spánku a lovu.</p>
-            </div>
-        </section>
+<!-- Tab obsah -->
+<section id="about" class="tab-content active-tab">
+    <h2>Kočky a jejich různé rasy</h2>
+    <div>
+        <h3>Perská kočka</h3>
+        <p>Perské kočky jsou známé svým dlouhým, huňatým kožichem a kulatou tváří s krátkým nosem. Mají klidnou a přítulnou povahu.</p>
+    </div>
+    <div>
+        <h3>Siamka</h3>
+        <p>Siamky jsou známé svým štíhlým tělem, modrýma očima a krátkou srstí. Jsou velmi hlasité a aktivní.</p>
+    </div>
 
-        <!-- Sekce o zdraví koček -->
-        <section id="health">
-            <div class="container">
-                <h2>Zdraví koček</h2>
-                <p>Kočky jsou velmi nezávislé, ale také mohou trpět některými běžnými zdravotními problémy, jako jsou zubní problémy, obezita, problémy s ledvinami nebo močovými cestami. Pravidelné veterinární prohlídky jsou nezbytné pro udržení jejich zdraví. Kočkám je potřeba poskytovat vyváženou stravu a dostatek pohybu.</p>
-            </div>
-        </section>
+    <h2>Kočky mohou být domácí i divoké</h2>
+    <div>
+        <h3>Domácí kočka</h3>
+        <p>Domácí kočky (Felis catus) jsou obvykle chovány jako domácí mazlíčci. Jsou přátelské, komunikativní a obvykle žijí v domácnostech s lidmi.</p>
+    </div>
+    <div>
+        <h3>Divoká kočka</h3>
+        <p>Divoké kočky (Felis silvestris) jsou většinou plaché a žijí v přírodě. Mají tendenci se vyhýbat kontaktu s lidmi.</p>
+    </div>
 
-        <!-- Sekce o rasách koček -->
-        <section id="breeds">
-            <div class="container">
-                <h2>Rasy koček</h2>
-                <p>Existuje mnoho různých ras koček, každá s vlastními charakteristikami. Například siamská kočka je známá svou komunikativností a sociálním chováním, zatímco perská kočka je klidná a má dlouhou, hustou srst. Každá rasa má své specifické potřeby a temperament, který je důležité zohlednit při péči o ně.</p>
-            </div>
-        </section>
-    </main>
+    <h2>Jak vypadají kočky?</h2>
+    <p>Kočky mají různé vzhledy v závislosti na jejich plemeni. Některé mají dlouhou a hustou srst, jiné zase krátkou a jemnou. Barva jejich srsti může být různá – od bílé, přes černou až po různobarevné vzory jako tabby nebo skvrnitá srst. Kočky mají také výrazné oči, které mohou mít různé barvy jako zelené, modré nebo žluté. Tělo kočky je obvykle štíhlé a pružné, ideálně přizpůsobené k lovu.</p>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Všechno o Kočkách. Všechna práva vyhrazena.</p>
-        </div>
-    </footer>
+    <a href="pece_o_kockach.html" class="care-link">Zjistěte více o péči o kočky</a>
+    <a href="krmeni_o_kockach.html" class="feeding-link">Zjistěte více o krmení koček</a>
+</section>
+
+<section id="care" class="tab-content">
+    <h2>Péče o Kočky</h2>
+    <p>Péče o kočku je důležitá pro její zdraví a štěstí. Zde jsou některé základní tipy:</p>
+    <h3>Krmení</h3>
+    <p>Kočky potřebují kvalitní stravu bohatou na bílkoviny. Doporučuje se dávat kočkám krmivo, které je specifikované pro jejich věk a potřeby. Můžete jim dávat mokré i suché krmivo, ale vždy zajistěte, že mají přístup k čerstvé vodě.</p>
+    <h3>Údržba srsti</h3>
+    <p>Kočky s dlouhou srstí potřebují pravidelnou údržbu, aby se předešlo zacuchání. Kartáčujte je alespoň 2-3x týdně. U krátkosrstých koček je údržba méně náročná, ale stále je dobré je občas vyčesat.</p>
+    <h3>Pravidelné kontroly u veterináře</h3>
+    <p>Kočky by měly mít pravidelné veterinární prohlídky, očkování a odčervení, aby byly zdravé. Pravidelná péče pomáhá předcházet nemocem a infekcím.</p>
+
+    <a href="index.html" class="care-link">Zpět na hlavní stránku</a>
+</section>
+
+<section id="feeding" class="tab-content">
+    <h2>Krmení Koček</h2>
+    <p>Krmení je důležitou součástí péče o kočky. Kočky jsou obligátní masožravci, což znamená, že potřebují bílkoviny a tuky z masa pro své zdraví.</p>
+    <h3>Co by měla kočka jíst?</h3>
+    <p>Kočky by měly dostávat kvalitní krmivo, které obsahuje maso, ryby a další bílkoviny. Existuje mnoho komerčně dostupných krmiv pro kočky, ale vždy je důležité vybrat kvalitní značky a přizpůsobit krmivo podle věku a zdravotního stavu kočky.</p>
+
+    <h3>Co by kočky neměly jíst?</h3>
+    <p>Kočky by nikdy neměly jíst čokoládu, cibuli, česnek, hrozny nebo rozinky, protože jsou pro ně toxické. Mějte také na paměti, že příliš mnoho tučných nebo kořeněných jídel může být pro kočku škodlivé.</p>
+
+    <a href="index.html" class="feeding-link">Zpět na hlavní stránku</a>
+</section>
+
+<footer>
+    <p>&copy; 2025 Vše o Kočkách</p>
+</footer>
+
+<script>
+    function openTab(evt, tabName) {
+        var i, tabContent, tabLinks;
+        tabContent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabContent.length; i++) {
+            tabContent[i].classList.remove("active-tab");
+        }
+        tabLinks = document.getElementsByClassName("tab");
+        for (i = 0; i < tabLinks.length; i++) {
+            tabLinks[i].classList.remove("active");
+        }
+        document.getElementById(tabName).classList.add("active-tab");
+        evt.currentTarget.classList.add("active");
+    }
+</script>
+
 </body>
 </html>
-
