@@ -1,0 +1,178 @@
+* Základní stylování pro celé stránky */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Reakce na mobilní zařízení */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+/* Základní styl pro celé tělo */
+/* Základní styl pro celé tělo */
+/* Základní styl pro celé tělo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Styl pro hlavičku a navigaci */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #000000;
+}
+
+/* Hlavní obsah */
+main {
+    padding-top: 70px; /* Zajistí, že obsah nezačne pod navigací */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Zarovnání na začátek */
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* Sekce s obrázkem a textem */
+.content {
+    display: flex;
+    flex-direction: row; /* Obrázek vpravo, text vlevo */
+    width: 100%;
+    align-items: center;
+}
+
+/* Textová část */
+.text {
+    flex: 1;
+    padding: 20px;
+    max-width: 50%; /* Zajišťuje, že text nebude zabírat celou šířku */
+}
+
+h2 {
+    color: #000; /* Černá barva nadpisu */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold; /* Tučné písmo pro nadpis */
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Obrázková část */
+.image {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start; /* Obrázek na pravé straně */
+}
+
+.image img {
+    width: 80%; /* Obrázek bude menší */
+    height: auto; /* Udržuje přirozený poměr stran */
+    object-fit: contain; /* Zajišťuje, že obrázek bude zmenšen, ale neztratí kvalitu */
+    border-radius: 10px;
+}
+
+/* Styl pro zápatí */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Reakce na mobilní zařízení */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Na menších zařízeních se obsah bude zobrazovat vertikálně */
+    }
+
+    .text {
+        max-width: 100%;
+    }
+
+    .image img {
+        width: 80%; /* Na mobilu bude obrázek větší */
+    }
+}
