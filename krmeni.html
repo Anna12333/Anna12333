@@ -3,45 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krmení Koček</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Kontakt</title>
+    <style>
+        /* Základní stylování pro celé stránky */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            height: 100vh; /* Zajištění plné výšky stránky */
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0; text-align: center;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Hlavní část stránky */
+        main {
+            display: flex;
+            width: 100%;
+            height: calc(100vh - 140px); /* Zajištění, že hlavní obsah zabere celý prostor mezi header a footer */
+            justify-content: space-between; /* Rozdělení na dvě části */
+            padding: 20px;
+            align-items: flex-start; /* Text začne od shora */
+        }
+
+        /* Styly pro textovou část */
+        .text {
+            flex: 1;
+            padding-right: 20px;
+            margin-top: 0; /* Ujistíme se, že text je hned pod hlavičkou */
+        }
+
+        .text h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .text p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Styly pro obrázek */
+        .image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .image img {
+            width: 100%; /* Obrázek zabere maximální šířku, ale ne přehnaně */
+            height: auto;
+            max-width: 600px; /* Maximální šířka obrázku (aby nepřesahoval text) */
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Reakce na mobilní zařízení */
+        @media (max-width: 600px) {
+            main {
+                flex-direction: column; /* Změní rozložení na vertikální pro menší obrazovky */
+                align-items: center;
+            }
+
+            .text {
+                padding-right: 0;
+                text-align: center;
+            }
+
+            .image {
+                margin-top: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Krmení Koček</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Úvod</a></li>
-                    <li><a href="krmeni.html">Péče o kočky</a></li>
-                    <li><a href="aboout.html">Krmení koček</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <main>
-        <section class="feeding-section">
-            <h2>Jak správně krmit kočku?</h2>
-            <p>Kočky potřebují kvalitní a vyváženou stravu. Je důležité věnovat pozornost jejich stravovacím návykům a potřebám.</p>
-            <ul>
-                <li>Podávejte kvalitní granule nebo konzervy, které jsou speciálně vyvinuty pro kočky.</li>
-                <li>Dávejte jim čerstvou vodu každý den, aby byly hydratované.</li>
-                <li>Krmení by mělo být pravidelné a podle věku kočky.</li>
-            </ul>
-            <img src="https://via.placeholder.com/600x400?text=Krmen%C3%AD+ko%C4%8Dky" alt="Krmení koček">
-        </section>
-    </main>
+    <header>
+        <nav> <ul>
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="about.html">O nás</a></li>
+            <li><a href="krmeni.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Textová část vlevo -->
+    <div class="text">
+        <h2>Jak nás kontaktovat?</h2>
+        <p>Máte-li jakékoli dotazy, neváhejte nás kontaktovat na emailu: <strong>info@filmy.cz</strong></p>
+
+        <p>Rádi bychom se dozvěděli, jak můžeme zlepšit naše služby. Pokud máte nějaký návrh, připomínku nebo otázku týkající se našich produktů, kontaktujte nás. Naším cílem je poskytovat vám ty nejlepší filmové zážitky a služby. Pokud se chcete dozvědět více o nadcházejících filmech, novinkách v oblasti kina nebo o našich speciálních akcích, přihlaste se k odběru našeho newsletteru.</p>
+
+        <p>Chápeme, jak důležité je mít rychlý a efektivní přístup k informacím, a proto se snažíme odpovědět na všechny vaše dotazy co nejrychleji. Naši odborníci jsou k dispozici každý den od 9:00 do 18:00 a rádi vám pomohou s jakýmikoli otázkami týkajícími se našich filmů, předprodeje vstupenek nebo doporučení na základě vašich preferencí.</p>
+
+        <p>Pro více informací o našich produktech a službách nás můžete také sledovat na sociálních médiích, kde pravidelně sdílíme novinky, recenze a různé tipy na filmy. Těšíme se na vaše dotazy a připomínky!</p>
+    </div>
+
+    <!-- Obrázková část vpravo -->
+    <div class="image">
+        <img src="https://lh5.googleusercontent.com/proxy/iYQrCCsDQMnO4jpAALILjXfPd5C6AutpaOEQf-Iz7CzyKDxhZ39Fj3BYXMMIIz7L-wQupwJNJl6dIM4hs9RUesdE7LtZfbtyqwfOZxc=s0-d" alt="Film obrázek">
+    </div>
+</main>
 
     <footer>
-        <p>&copy; 2025 Web o Kočkách. Všechna práva vyhrazena.</p>
+        <p>&copy; 2025 Tvá stránka. Všechna práva vyhrazena.</p>
     </footer>
+
 </body>
 </html>
-<nav>
-    <ul>
-        <li><a href="index.html" class="active">Domů</a></li>
-        <li><a href="about.html">O nás</a></li>
-        <li><a href="contact.html">Kontakt</a></li>
-    </ul>
-</nav>
