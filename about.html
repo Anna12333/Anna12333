@@ -3,40 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Péče o Kočky</title>
+    <style>
+        /* Základní reset pro všechny elementy */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(45deg, #FFC0CB, #FF69B4);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .intro-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #FF69B4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 20px 20px 0 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Responzivita pro mobilní zařízení */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            section h2 {
+                font-size: 1.8rem;
+            }
+
+            section p {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Domů</a></li>
-                <li><a href="krmeni.html">O nás</a></li>
-                <li><a href="about.html">Kontakt</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Péče o Kočky</h1>
+            <nav>
+                <ul>
+                    <li><a href="#feeding">Krmení koček</a></li>
+                    <li><a href="#grooming">Údržba srsti</a></li>
+                    <li><a href="#health">Zdraví kočky</a></li>
+                    <li><a href="#exercise">Cvičení a hraní</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <section class="content">
-            <div class="text">
-                <h2>O nás</h2>
-                <p>Vítejte na Film Fan! Jsme tým filmových nadšenců, kteří se rozhodli spojit svou vášeň pro kinematografii a sdílet ji s vámi. Naším cílem je přinášet vám to nejlepší z filmového světa – od aktuálních novinek a recenzí až po zajímavé informace a tipy pro všechny filmové fanoušky.</p>
-                <p>Na této stránce najdete nejen podrobné recenze na nové filmy, ale také články, které vám přiblíží historii filmu, zajímavosti o natáčení, rozhovory s tvůrci a vše, co by měl každý filmový fanoušek vědět. Ať už jste obdivovatelé velkých hollywoodských produkcí, nebo vyhledáváte méně známé nezávislé filmy, máme pro vás něco, co vás zaujme.</p>
-            </div>
-            <div class="image">
-                <img src="https://th.bing.com/th/id/OIP.2TONuJgQblETn00hTxadvQHaEc?w=283&h=180&c=7&r=0&o=5&pid=1.7" alt="Film Fan" />
+        <!-- Úvodní sekce s obrázkem -->
+        <section id="intro">
+            <div class="container">
+                <h2>Jak správně pečovat o kočky</h2>
+                <p>Kočky jsou skvělí společníci, ale vyžadují specifickou péči, která se zaměřuje na jejich zdraví, výživu, údržbu srsti a cvičení. Správná péče o kočku je klíčová pro její dlouhý a šťastný život.</p>
+                <img src="https://example.com/cat-image.jpg" alt="Kočka" class="intro-image">
             </div>
         </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Tvá stránka. Všechna práva vyhrazena.</p>
-    </footer>
-</body>
-</html>
-<nav>
-    <ul>
-        <li><a href="index.html" class="active">Domů</a></li>
-        <li><a href="about.html">O nás</a></li>
-        <li><a href="contact.html">Kontakt</a></li>
-    </ul>
-</nav>
+
+        <!-- Sekce o krmení koček -->
+        <section id="feeding">
+            <div class="container">
+                <h2>Krmení koček</h2>
+                <p>Kočky jsou masožravci, což znamená, že jejich strava by měla být bohatá na bílkoviny. Vhodné je podávat kvalitní komerční krmivo (suché i vlhké) nebo, pokud preferujete domácí stravu, konzultujte s veterinářem správnou výživu. Důležité je také zajistit, aby kočka měla stále přístup k čerstvé vodě.</p>
+            </div>
+        </section>
+
+        <!-- Sekce o údržbě srsti koček -->
+        <section id="grooming">
+            <div class="container">
+                <h2>Údržba srsti koček</h2>
+                <p>Kočky s dlouhou srstí, jako například perské kočky, potřebují pravidelnou péči o svou srst, aby se předešlo zamotání a zacuchání. U kratkosrstých koček stačí obvykle jednou za týden jemné kartáčování. Pravidelný grooming nejenže zajišťuje zdravou srst, ale také pomáhá udržovat kočku v dobré
