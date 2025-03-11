@@ -3,137 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
-    <style>
-        /* Základní stylování pro celé stránky */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            height: 100vh; /* Zajištění plné výšky stránky */
-            display: flex;
-            flex-direction: column;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px 0; text-align: center;
-            width: 100%;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        /* Hlavní část stránky */
-        main {
-            display: flex;
-            width: 100%;
-            height: calc(100vh - 140px); /* Zajištění, že hlavní obsah zabere celý prostor mezi header a footer */
-            justify-content: space-between; /* Rozdělení na dvě části */
-            padding: 20px;
-            align-items: flex-start; /* Text začne od shora */
-        }
-
-        /* Styly pro textovou část */
-        .text {
-            flex: 1;
-            padding-right: 20px;
-            margin-top: 0; /* Ujistíme se, že text je hned pod hlavičkou */
-        }
-
-        .text h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .text p {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        /* Styly pro obrázek */
-        .image {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-        }
-
-        .image img {
-            width: 100%; /* Obrázek zabere maximální šířku, ale ne přehnaně */
-            height: auto;
-            max-width: 600px; /* Maximální šířka obrázku (aby nepřesahoval text) */
-            border-radius: 8px;
-        }
-
-        footer {
-            background-color: #333;color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        /* Reakce na mobilní zařízení */
-        @media (max-width: 600px) {
-            main {
-                flex-direction: column; /* Změní rozložení na vertikální pro menší obrazovky */
-                align-items: center;
-            }
-
-            .text {
-                padding-right: 0;
-                text-align: center;
-            }
-
-            .image {
-                margin-top: 20px;
-            }
-        }
-    </style>
+    <title>Všechno o Kočkách</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <nav> <ul>
-            <li><a href="index.html">Domů</a></li>
-            <li><a href="about.html">O nás</a></li>
-            <li><a href="krmeni.html">Kontakt</a></li>
-        </ul>
-    </nav>
-</header>
+        <div class="container">
+            <h1>Všechno o Kočkách</h1>
+            <nav>
+                <ul>
+                    <li><a href="#life-span">Délka života</a></li>
+                    <li><a href="#behavior">Chování</a></li>
+                    <li><a href="#health">Zdraví koček</a></li>
+                    <li><a href="#breeds">Rasy koček</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<main>
-    <!-- Textová část vlevo -->
-    <div class="text">
-        <h2>Jak kočky krmit?</h2>
-        <p>Krmení kočky je klíčové pro její zdraví a pohodu. Kočky jsou obligátní masožravci, což znamená, že jejich strava by měla být bohatá především na bílkoviny a tuky. Pokud se o výživu vaší kočky správně postaráte, pomůžete jí udržet zdraví, vitalitu a dlouhý život.</p>
-</div>
+    <main>
+        <section id="life-span">
+            <h2>Délka života kočky</h2>
+            <p>Kočky se mohou dožít velmi dlouhého věku. Průměrná domácí kočka žije kolem 12 až 16 let, ale některé mohou žít až 20 let nebo déle, pokud jsou dobře pečovány a mají zdravý životní styl. Kočky, které žijí venku, mají obvykle kratší život kvůli nebezpečím, která je ohrožují.</p>
+        </section>
 
-    <!-- Obrázková část vpravo -->
-    <div class="image">
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.zoohit.cz%2Fmagazin%2Fkocky%2Fpece-o-zdravi-kocky%2Fvek-kocky&psig=AOvVaw0EMhzmep2h7LDE7pNqIFe6&ust=1741766742268000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLCHxfHIgYwDFQAAAAAdAAAAABAx"alt="kočky">
-</main>
+        <section id="behavior">
+            <h2>Chování koček</h2>
+            <p>Kočky jsou známé svou nezávislostí, ale jsou také velmi společenské, pokud jde o jejich majitele. Kočky mají rády klid a stabilitu ve svém okolí. Mohou být velmi přítulné a vázat se na svého majitele, ale také si rády užívají chvíle samoty. Kočičí chování zahrnuje i jejich zvyky při hraní, spánku a lovu.</p>
+        </section>
+
+        <section id="health">
+            <h2>Zdraví koček</h2>
+            <p>Kočky jsou velmi nezávislé, ale také mohou trpět některými běžnými zdravotními problémy, jako jsou zubní problémy, obezita, problémy s ledvinami nebo močovými cestami. Pravidelné veterinární prohlídky jsou nezbytné pro udržení jejich zdraví. Kočkám je potřeba poskytovat vyváženou stravu a dostatek pohybu.</p>
+        </section>
+
+        <section id="breeds">
+            <h2>Rasy koček</h2>
+            <p>Existuje mnoho různých ras koček, každá s vlastními charakteristikami. Například siamská kočka je známá svou komunikativností a sociálním chováním, zatímco perská kočka je klidná a má dlouhou, hustou srst. Každá rasa má své specifické potřeby a temperament, který je důležité zohlednit při péči o ně.</p>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Tvá stránka. Všechna práva vyhrazena.</p>
+        <div class="container">
+            <p>&copy; 2025 Všechno o Kočkách. Všechna práva vyhrazena.</p>
+        </div>
     </footer>
-
 </body>
 </html>
+
+
+        
