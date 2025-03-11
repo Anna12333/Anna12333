@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vše o Kočkách - O Kočkách</title>
+    <title>Vše o Kočkách</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #fef1f6;
+            background-color: #fef1f6; /* světle růžová */
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #ff80ab;
+            background-color: #ff80ab; /* růžová */
             color: white;
             padding: 20px 0;
             text-align: center;
@@ -22,29 +22,28 @@
             margin: 0;
             font-size: 36px;
         }
-        nav {
-            background-color: #ff80ab;
-            text-align: center;
-            padding: 10px 0;
-        }
-        nav a {
-            color: white;
-            font-size: 18px;
-            padding: 10px 20px;
-            text-decoration: none;
-            margin: 0 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        nav a:hover {
-            background-color: #ff4c8d;
-        }
         footer {
             text-align: center;
             padding: 10px;
             background-color: #ff80ab;
             color: white;
             margin-top: 40px;
+        }
+        p {
+            line-height: 1.6;
+            color: #333;
+        }
+        .link {
+            background-color: #ff4c8d;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .link:hover {
+            background-color: #ff1f5c;
         }
     </style>
 </head>
@@ -54,37 +53,15 @@
     <h1>Vše o Kočkách</h1>
 </header>
 
-<!-- Navigační lišta -->
-<nav>
-    <a href="index.html">O kočkách</a>
-    <a href="pece.html">Péče o kočky</a>
-    <a href="krmeni.html">Krmení koček</a>
-</nav>
-
 <main>
     <h2>Kočky a jejich různé rasy</h2>
-    <div>
-        <h3>Perská kočka</h3>
-        <p>Perské kočky jsou známé svým dlouhým, huňatým kožichem...</p>
-    </div>
-    <div>
-        <h3>Siamka</h3>
-        <p>Siamky jsou známé svým štíhlým tělem, modrýma očima...</p>
-    </div>
+    <p>Kočky jsou fascinující zvířata. Mnoho lidí je chová jako domácí mazlíčky, ale kočky mohou být také divoké a nezávislé.</p>
 
-    <h2>Kočky mohou být domácí i divoké</h2>
-    <div>
-        <h3>Domácí kočka</h3>
-        <p>Domácí kočky (Felis catus) jsou obvykle chovány jako domácí mazlíčci...</p>
-    </div>
-    <div>
-        <h3>Divoká kočka</h3>
-        <p>Divoké kočky (Felis silvestris) jsou většinou plaché...</p>
-    </div>
+    <h3>Různé druhy koček</h3>
+    <p>Existuje mnoho druhů koček, například Perská kočka, Siamka, Maine Coon a další. Každá má své charakteristické rysy.</p>
 
-    <h2>Jak vypadají kočky?</h2>
-    <p>Kočky mají různé vzhledy v závislosti na jejich plemeni...</p>
-
+    <a href="pece.html" class="link">Zjistěte více o péči o kočky</a>
+    <a href="krmeni.html" class="link">Zjistěte více o krmení koček</a>
 </main>
 
 <footer>
