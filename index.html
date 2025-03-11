@@ -3,38 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web o Kočkách</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moje Webová Stránka</title>
+
+    <!-- Google Font: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Obecné nastavení pro tělo stránky */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+          /* Navigace */
+          nav {
+            background-color: rgba(0, 0, 0, 0.7); /* Mírně průhledné pozadí pro navigaci */
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {   display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: #4CAF50;
+        }
+   /* Hlavní obsah */
+   main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Začátek textu ihned pod hlavičkou */
+            align-items: center;
+            text-align: center;
+            padding: 80px 20px 20px 20px; /* Padding pro horní část stránky, aby text nezačínal přímo pod navigací */
+            height: 100%; /* Zajištění, že stránka zaplní celý prostor */
+        }
+
+        h1 {
+            color: #000000; /* Černá barva nadpisu */
+            font-size: 3em; /* Zvýšení velikosti nadpisu */
+            margin-top: 0; /* Úprava, aby nadpis byl hned pod hlavičkou */
+            margin-bottom: 40px; /* Větší mezera pod nadpisem */
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        /* Obrázky - uspořádání tří obrázků */
+        .images {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 20px; /* Mezera mezi obrázky */
+        }
+
+        .images img {
+            width: 30%; /* Každý obrázek zabírá 30% šířky */
+            height: 300px; /* Pevná výška pro obrázky */
+            object-fit: cover; /* Zachová poměr stran a pokryje požadovanou oblast */
+            border-radius: 10px; /* Zaoblení rohů */
+        }
+           /* Zápatí */
+           footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            position: relative;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* Tlačítko pro návrat na vrchol */
+        #scrollToTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+            cursor: pointer;
+        }
+
+        #scrollToTopBtn:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Vítejte na webu o kočkách!</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Úvod</a></li>
-                    <li><a href="pece.html">Péče o kočky</a></li>
-                    <li><a href="krmeni.html">Krmení koček</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
+    <!-- Navigace -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Domů</a></li>
+            <li><a href="about.html">O nás</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hlavní obsah -->
     <main>
-        <section class="hero">
-            <h2>Objevte svět koček</h2>
-            <p>Vše, co potřebujete vědět o kočkách - péče, výživa a další užitečné informace pro vašeho mazlíčka.</p>
-        </section>
-
-        <section class="intro">
-            <h3>Proč kočky?</h3>
-            <p>Kočky jsou skvělí společníci s jedinečnou osobností. Rádi se o ně postaráme, ať už jde o péči nebo výživu.</p>
-            <img src="https://via.placeholder.com/600x400?text=Ko%C4%8Dka" alt="Kočka">
-        </section>
+        <h1>Film Fan</h1>
+        
+        <!-- Obrázky -->
+        <div class="images">
+            <img src="https://th.bing.com/th/id/R.02822faddf5a2e4aaf44eefa439561f7?rik=gvP%2bfh6oD1MPRQ&pid=ImgRaw&r=0" alt="Animované pohádky">
+            <img src="https://image.pmgstatic.com/cache/resized/w1989/files/images/film/photos/166/748/166748859_efd3b3.jpg" alt="Film obrázek">
+            <img src="https://nafilmu.cz/wp-content/uploads/2023/11/Trailer-na-V-hlave-2-696x464.webp" alt="Film obrázek">
+        </div>
     </main>
-
+    <!-- Zápatí -->
     <footer>
-        <p>&copy; 2025 Web o Kočkách. Všechna práva vyhrazena.</p>
+        <p>&copy; 2025 FilmFan. Všechna práva vyhrazena.</p>
+        <p>Webová stránka vytvořena pomocí HTML a CSS.</p>
     </footer>
+
+    <!-- Tlačítko pro návrat na vrchol -->
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">↑</button>
+
+    <!-- JavaScript pro scroll-to-top -->
+    <script>
+        // Získání tlačítka
+        var mybutton = document.getElementById("scrollToTopBtn");
+
+        // Když uživatel scrolluje dolů 20px od vrchu stránky, zobrazí tlačítko
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
+
+        // Když uživatel klikne na tlačítko, přejde na vrchol stránky
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
 </body>
 </html>
