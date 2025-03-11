@@ -1,178 +1,150 @@
-* Základní stylování pro celé stránky */
-body {
-    font-family: Arial, sans-serif;
+/* Základní reset pro všechny elementy */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 header {
-    background-color: #333;
+    background: linear-gradient(45deg, #FFB6C1, #FF69B4);
     color: white;
     padding: 20px 0;
     text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
+    margin-top: 15px;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-main {
-    padding: 20px;
+nav ul li a:hover {
+    color: #333;
+}
+
+/* Sekce Úvodní obrázek */
+.intro-section {
+    background-color: #f1f1f1;
+    padding: 40px 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.intro-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #FF69B4;
+}
+
+.intro-section p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.intro-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sekce s textem */
+section {
+    background-color: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
 }
 
 footer {
-    background-color: #333;
+    background-color: #FF69B4;
     color: white;
+    padding: 20px;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    border-radius: 20px 20px 0 0;
+    margin-top: 40px;
 }
 
-/* Reakce na mobilní zařízení */
-@media (max-width: 600px) {
+footer p {
+    font-size: 1rem;
+}
+
+/* Responzivita pro mobilní zařízení */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
     nav ul li {
         display: block;
         margin-bottom: 10px;
     }
-}
-/* Základní styl pro celé tělo */
-/* Základní styl pro celé tělo */
-/* Základní styl pro celé tělo */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
 
-/* Styl pro hlavičku a navigaci */
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-}
-
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-}
-
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-header nav ul li a:hover {
-    color: #000000;
-}
-
-/* Hlavní obsah */
-main {
-    padding-top: 70px; /* Zajistí, že obsah nezačne pod navigací */
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Zarovnání na začátek */
-    background-color: #fff;
-    padding: 20px;
-}
-
-/* Sekce s obrázkem a textem */
-.content {
-    display: flex;
-    flex-direction: row; /* Obrázek vpravo, text vlevo */
-    width: 100%;
-    align-items: center;
-}
-
-/* Textová část */
-.text {
-    flex: 1;
-    padding: 20px;
-    max-width: 50%; /* Zajišťuje, že text nebude zabírat celou šířku */
-}
-
-h2 {
-    color: #000; /* Černá barva nadpisu */
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    font-weight: bold; /* Tučné písmo pro nadpis */
-}
-
-p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    text-align: justify;
-}
-
-/* Obrázková část */
-.image {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    justify-content: flex-start; /* Obrázek na pravé straně */
-}
-
-.image img {
-    width: 80%; /* Obrázek bude menší */
-    height: auto; /* Udržuje přirozený poměr stran */
-    object-fit: contain; /* Zajišťuje, že obrázek bude zmenšen, ale neztratí kvalitu */
-    border-radius: 10px;
-}
-
-/* Styl pro zápatí */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Reakce na mobilní zařízení */
-@media (max-width: 768px) {
-    .content {
-        flex-direction: column; /* Na menších zařízeních se obsah bude zobrazovat vertikálně */
+    section {
+        padding: 20px;
     }
 
-    .text {
-        max-width: 100%;
+    section h2 {
+        font-size: 1.8rem;
     }
 
-    .image img {
-        width: 80%; /* Na mobilu bude obrázek větší */
+    section p {
+        font-size: 1rem;
+    }
+
+    .intro-section h2 {
+        font-size: 2rem;
+    }
+
+    .intro-section p {
+        font-size: 1rem;
     }
 }
+
+    
