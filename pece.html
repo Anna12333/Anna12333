@@ -22,16 +22,33 @@
             margin: 0;
             font-size: 36px;
         }
+        main {
+            padding: 20px;
+            color: #333;
+        }
+        h2 {
+            color: #ff4c8d;
+        }
+        p {
+            line-height: 1.6;
+            color: #333;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            width: 80%; /* Nastavuje šířku obrázku na 80% šířky stránky */
+            max-width: 600px; /* Maximální šířka obrázku */
+            border-radius: 10px; /* Zaoblené rohy obrázku */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stín pro estetický efekt */
+        }
         footer {
             text-align: center;
             padding: 10px;
             background-color: #ff80ab;
             color: white;
             margin-top: 40px;
-        }
-        p {
-            line-height: 1.6;
-            color: #333;
         }
         .link {
             background-color: #ff4c8d;
@@ -50,18 +67,26 @@
 <body>
 
 <header>
-    <h1>Péče o Kočky</h1>
+    <h1>Vše o Kočkách</h1>
 </header>
 
 <main>
-    <h2>Údržba a hygiena</h2>
-    <p>Kočky jsou samy o sobě velmi čistotná zvířata. Většinu času tráví péčí o svou srst, olizováním a česáním. Přesto je třeba o ně pečovat, aby byly zdravé a v dobré kondici. Pokud máte kočku s dlouhou srstí, je nutné ji pravidelně česat, aby se předešlo zamotání a zacuchání. U krátkosrstých koček je to méně náročné, ale i tak je dobré je sem tam vyčesat.</p>
+    <h2>Péče o Kočky</h2>
+    <p>Péče o kočku je nezbytná pro její zdraví a dlouhověkost. Kočky potřebují kvalitní stravu, pravidelnou údržbu srsti, a pravidelné návštěvy u veterináře. Zde jsou některé důležité tipy:</p>
 
-    <h3>Pravidelné veterinární kontroly</h3>
-    <p>Stejně jako u všech domácích mazlíčků je i u koček důležitá pravidelná kontrola u veterináře. Kočky by měly být pravidelně očkovány proti nemocem a odčervovány, aby byly zdravé. Je dobré je také pravidelně sledovat na přítomnost parazitů, jako jsou blechy nebo klíšťata.</p>
+    <h3>Krmení</h3>
+    <p>Kočky potřebují stravu bohatou na bílkoviny a tuky. Doporučuje se dávat kočkám krmivo specifikované pro jejich věk a potřeby. Doporučujeme kvalitní suché a mokré krmivo, ale vždy zajistěte, aby měly dostatek čerstvé vody.</p>
 
-    <h3>Bezpečné prostředí</h3>
-    <p>Kočky by měly mít k dispozici bezpečné prostředí, které jim poskytuje dostatek místa na hraní, odpočinek a úkryt. Zajistěte, aby se v domácnosti nacházely oblasti, kde se mohou kočky schovat, například vyvýšené postele nebo krabice.</p>
+    <h3>Údržba srsti</h3>
+    <p>Kočky s dlouhou srstí potřebují pravidelnou údržbu, aby se předešlo zacuchání. Kartáčujte je alespoň 2-3x týdně. U krátkosrstých koček je údržba méně náročná, ale i tak je dobré je občas vyčesat.</p>
+
+    <h3>Veterinární prohlídky</h3>
+    <p>Kočky by měly mít pravidelné veterinární prohlídky, očkování a odčervení. Pravidelná péče pomáhá předcházet nemocem a infekcím.</p>
+
+    <!-- Přidání obrázku pro péči o kočky -->
+    <div class="image-container">
+        <img src="https://www.krmimkvalitne.cz/data/tmp/15/6/8936_15.jpg?1657812912_1" alt="Kočka při péči" />
+    </div>
 
     <a href="index.html" class="link">Zpět na hlavní stránku</a>
     <a href="krmeni.html" class="link">Zjistěte více o krmení koček</a>
