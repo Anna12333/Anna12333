@@ -22,16 +22,33 @@
             margin: 0;
             font-size: 36px;
         }
+        main {
+            padding: 20px;
+            color: #333;
+        }
+        h2 {
+            color: #ff4c8d;
+        }
+        p {
+            line-height: 1.6;
+            color: #333;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            width: 80%; /* Nastavuje šířku obrázku na 80% šířky stránky */
+            max-width: 600px; /* Maximální šířka obrázku */
+            border-radius: 10px; /* Zaoblené rohy obrázku */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stín pro estetický efekt */
+        }
         footer {
             text-align: center;
             padding: 10px;
             background-color: #ff80ab;
             color: white;
             margin-top: 40px;
-        }
-        p {
-            line-height: 1.6;
-            color: #333;
         }
         .link {
             background-color: #ff4c8d;
@@ -50,18 +67,23 @@
 <body>
 
 <header>
-    <h1>Krmení Koček</h1>
+    <h1>Vše o Kočkách</h1>
 </header>
 
 <main>
-    <h2>Správná výživa pro kočky</h2>
-    <p>Kočky jsou obligátní masožravci, což znamená, že jejich strava by měla být bohatá na živočišné bílkoviny. Doporučuje se podávat kočkám kvalitní komerčně dostupné krmivo, které splňuje jejich specifické nutriční potřeby. Různé věkové kategorie koček mají odlišné výživové požadavky, takže je důležité vybrat správný druh krmiva podle jejich věku a zdravotního stavu.</p>
+    <h2>Krmení Koček</h2>
+    <p>Krmení koček je klíčové pro jejich zdraví a pohodu. Kočky jsou obligátní masožravci, což znamená, že jejich strava musí obsahovat vysoký podíl masa a bílkovin. Kromě masa je důležitá i vyvážená strava s vitamíny a minerály.</p>
 
-    <h3>Mokré a suché krmivo</h3>
-    <p>Kočkám je doporučováno podávat jak mokré, tak suché krmivo, aby byla jejich strava vyvážená. Mokré krmivo pomáhá zajistit, že kočka dostává dostatek vody, což je důležité pro zdraví ledvin. Suché krmivo je zase výhodné pro udržení zdraví zubů a dásní.</p>
+    <h3>Co by měla kočka jíst?</h3>
+    <p>Kočky by měly dostávat kvalitní krmivo, které obsahuje maso, ryby a další bílkoviny. Existuje mnoho komerčně dostupných krmiv pro kočky, ale vždy je důležité vybrat kvalitní značky a přizpůsobit krmivo podle věku a zdravotního stavu kočky.</p>
 
     <h3>Co by kočky neměly jíst?</h3>
-    <p>Existuje několik potravin, které jsou pro kočky toxické. Patří sem například čokoláda, cibule, česnek, hrozny a rozinky. Tyto potraviny mohou způsobit vážné zdravotní problémy. Dále byste měli omezit přísun tučných jídel a kořeněných pokrmů.</p>
+    <p>Kočky by nikdy neměly jíst čokoládu, cibuli, česnek, hrozny nebo rozinky, protože jsou pro ně toxické. Mějte také na paměti, že příliš mnoho tučných nebo kořeněných jídel může být pro kočku škodlivé.</p>
+
+    <!-- Přidání obrázku pro krmení koček -->
+    <div class="image-container">
+        <img src="https://www.vimcimkrmim.cz/wp-content/uploads/2017/06/ryba-na-kocici-jidelnicek-patri_vim-cim-krmim_fitmin_uvodni-foto.jpg" alt="Kočka jí rybu" />
+    </div>
 
     <a href="index.html" class="link">Zpět na hlavní stránku</a>
     <a href="pece.html" class="link">Zjistěte více o péči o kočky</a>
