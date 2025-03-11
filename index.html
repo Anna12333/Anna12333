@@ -3,171 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Moje Webová Stránka</title>
-
-    <!-- Google Font: Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <style>
-        /* Obecné nastavení pro tělo stránky */
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            background-color: #f0f8ff;
-            color: #333;
-        }
-          /* Navigace */
-          nav {
-            background-color: rgba(0, 0, 0, 0.7); /* Mírně průhledné pozadí pro navigaci */
-            padding: 10px;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 100;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            text-align: center;
-        }
-
-        nav ul li {   display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        nav ul li a:hover {
-            color: #4CAF50;
-        }
-   /* Hlavní obsah */
-   main {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start; /* Začátek textu ihned pod hlavičkou */
-            align-items: center;
-            text-align: center;
-            padding: 80px 20px 20px 20px; /* Padding pro horní část stránky, aby text nezačínal přímo pod navigací */
-            height: 100%; /* Zajištění, že stránka zaplní celý prostor */
-        }
-
-        h1 {
-            color: #000000; /* Černá barva nadpisu */
-            font-size: 3em; /* Zvýšení velikosti nadpisu */
-            margin-top: 0; /* Úprava, aby nadpis byl hned pod hlavičkou */
-            margin-bottom: 40px; /* Větší mezera pod nadpisem */
-        }
-
-        p {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-        /* Obrázky - uspořádání tří obrázků */
-        .images {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            gap: 20px; /* Mezera mezi obrázky */
-        }
-
-        .images img {
-            width: 30%; /* Každý obrázek zabírá 30% šířky */
-            height: 300px; /* Pevná výška pro obrázky */
-            object-fit: cover; /* Zachová poměr stran a pokryje požadovanou oblast */
-            border-radius: 10px; /* Zaoblení rohů */
-        }
-           /* Zápatí */
-           footer {
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 10px;
-            position: relative;
-            text-align: center;
-            font-size: 14px;
-        }
-
-        /* Tlačítko pro návrat na vrchol */
-        #scrollToTopBtn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            display: none;
-            cursor: pointer;
-        }
-
-        #scrollToTopBtn:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <title>Všechno o Kočkách</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navigace -->
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active">Domů</a></li>
-            <li><a href="about.html">O nás</a></li>
-            <li><a href="krmeni.html">Kontakt</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hlavní obsah -->
-    <main>
-        <h1>Kočky</h1>
-        
-        <!-- Obrázky -->
-        <div class="images">
-            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.zoochleby.cz%2Fkocka-6131%2F&psig=AOvVaw0EMhzmep2h7LDE7pNqIFe6&ust=1741766742268000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLCHxfHIgYwDFQAAAAAdAAAAABAE" alt="kočky">
-            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.zoohit.cz%2Fmagazin%2Fkocky%2Fporizeni-a-chov-kocek%2Fdruha-kocka-v-domacnosti&psig=AOvVaw0EMhzmep2h7LDE7pNqIFe6&ust=1741766742268000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLCHxfHIgYwDFQAAAAAdAAAAABAJ" alt="kočky">
-            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fzoom.iprima.cz%2Fpriroda%2Fpoti-se-kocky&psig=AOvVaw0EMhzmep2h7LDE7pNqIFe6&ust=1741766742268000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLCHxfHIgYwDFQAAAAAdAAAAABAR" alt="kočky">
+    <header>
+        <div class="container">
+            <h1>Všechno o Kočkách</h1>
+            <nav>
+                <ul>
+                    <li><a href="#life-span">Délka života</a></li>
+                    <li><a href="#behavior">Chování</a></li>
+                    <li><a href="#health">Zdraví koček</a></li>
+                    <li><a href="#breeds">Rasy koček</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
+
+    <main>
+        <!-- Sekce s obrázkem na úvodní stránce -->
+        <section id="intro" class="intro-section">
+            <div class="container">
+                <h2>Vítejte ve světě koček!</h2>
+                <p>Kočky jsou fascinující a nezávislé bytosti, které přinášejí radost do našich domovů. V této sekci se dozvíte více o tom, jak dlouho kočky žijí, jaké mají chování a jak o ně pečovat.</p>
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.zoohit.cz%2Fmagazin%2Fkocky%2Fpece-o-zdravi-kocky%2Fvek-kocky&psig=AOvVaw0EMhzmep2h7LDE7pNqIFe6&ust=1741766742268000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLCHxfHIgYwDFQAAAAAdAAAAABAx" alt="Kočka" class="intro-image">
+            </div>
+        </section>
+
+        <!-- Sekce o délce života kočky -->
+        <section id="life-span">
+            <div class="container">
+                <h2>Délka života kočky</h2>
+                <p>Kočky se mohou dožít velmi dlouhého věku. Průměrná domácí kočka žije kolem 12 až 16 let, ale některé mohou žít až 20 let nebo déle, pokud jsou dobře pečovány a mají zdravý životní styl. Kočky, které žijí venku, mají obvykle kratší život kvůli nebezpečím, která je ohrožují.</p>
+            </div>
+        </section>
+
+        <!-- Sekce o chování koček -->
+        <section id="behavior">
+            <div class="container">
+                <h2>Chování koček</h2>
+                <p>Kočky jsou známé svou nezávislostí, ale jsou také velmi společenské, pokud jde o jejich majitele. Kočky mají rády klid a stabilitu ve svém okolí. Mohou být velmi přítulné a vázat se na svého majitele, ale také si rády užívají chvíle samoty. Kočičí chování zahrnuje i jejich zvyky při hraní, spánku a lovu.</p>
+            </div>
+        </section>
+
+        <!-- Sekce o zdraví koček -->
+        <section id="health">
+            <div class="container">
+                <h2>Zdraví koček</h2>
+                <p>Kočky jsou velmi nezávislé, ale také mohou trpět některými běžnými zdravotními problémy, jako jsou zubní problémy, obezita, problémy s ledvinami nebo močovými cestami. Pravidelné veterinární prohlídky jsou nezbytné pro udržení jejich zdraví. Kočkám je potřeba poskytovat vyváženou stravu a dostatek pohybu.</p>
+            </div>
+        </section>
+
+        <!-- Sekce o rasách koček -->
+        <section id="breeds">
+            <div class="container">
+                <h2>Rasy koček</h2>
+                <p>Existuje mnoho různých ras koček, každá s vlastními charakteristikami. Například siamská kočka je známá svou komunikativností a sociálním chováním, zatímco perská kočka je klidná a má dlouhou, hustou srst. Každá rasa má své specifické potřeby a temperament, který je důležité zohlednit při péči o ně.</p>
+            </div>
+        </section>
     </main>
-    <!-- Zápatí -->
+
     <footer>
-        <p>&copy; 2025 FilmFan. Všechna práva vyhrazena.</p>
-        <p>Webová stránka vytvořena pomocí HTML a CSS.</p>
+        <div class="container">
+            <p>&copy; 2025 Všechno o Kočkách. Všechna práva vyhrazena.</p>
+        </div>
     </footer>
-
-    <!-- Tlačítko pro návrat na vrchol -->
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">↑</button>
-
-    <!-- JavaScript pro scroll-to-top -->
-    <script>
-        // Získání tlačítka
-        var mybutton = document.getElementById("scrollToTopBtn");
-
-        // Když uživatel scrolluje dolů 20px od vrchu stránky, zobrazí tlačítko
-        window.onscroll = function() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        };
-
-        // Když uživatel klikne na tlačítko, přejde na vrchol stránky
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-
 </body>
 </html>
+
